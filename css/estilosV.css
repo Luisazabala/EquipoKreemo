@@ -1,0 +1,44 @@
+.color_rojo{
+    color: red;
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    background: #D5CFCE;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 8px;
+   
+}
+
+.card{
+    height: auto;
+    margin: auto;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.botones{
+    height: auto;
+    margin: auto;
+}
+footer { 
+    text-align: center;
+    align-items: center;
+    align-self: flex-end;    
+    line-height: 2;   
+    text-align: center;    
+    width: 100%; 
+}
+.footer{
+    margin-top: auto ;
+    border-radius: 20px; 
+    font-family: "Monaco";
+    background-color:#e3e4e5;
+  
+}

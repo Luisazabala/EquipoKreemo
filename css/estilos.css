@@ -1,0 +1,38 @@
+.color_rojo{
+    color: red;
+}
+footer { 
+    text-align: center;
+    align-items: center;
+    align-self: flex-end;    
+    line-height: 2;   
+    text-align: center;    
+    width: 100%; 
+}
+.footer{
+    margin-top: auto ;
+    border-radius: 20px; 
+    font-family: "Monaco";
+    background-color:#e3e4e5;
+  
+}
+.card{ 
+    margin: auto; 
+    margin-top: 2rem; 
+    text-align: center;
+    border-color: black;
+}
+
+.body{
+    background-color: darkgray;
+}
+.card-header{
+    text-align: center;
+}
+.card{
+    width: 500px;
+    margin-top:10px;
+    margin-bottom: auto;
+    margin-left: 440px;
+    text-align: center;
+}

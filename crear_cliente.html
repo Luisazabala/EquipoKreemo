@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formClientes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilosV.css">
+
+</head>
+<body>
+    <div class="container">
+                    <div class="row" >
+                        <div class="input-fiel col s12">
+                            <header style="color:#DB442A" > <h3>Registro Clientes</h3></header>
+                        </div>
+                        <div class="col s12 l12">
+                           <form class="contact-form" action="registroCliente.php" id="regCliente" name="regCliente" method="POST">
+                           
+                            <div class="input-fiel col s12">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" placeholder="Nombre" id="nombre" name="nombre" title="Ingrese su nombre." class="solo_mayus_letras">
+                                <span  class="color_rojo" data-error="wrong" data-success="right" id="valNombre"></span>
+                            </div>
+                            <div class="input-fiel col s12">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" placeholder="Apellido" id="apellido" name="apellido" title="Ingrese su apellido." class="solo_mayus_letras">
+                                <span  class="color_rojo" data-error="wrong" data-success="right" id="valApellido"></span>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <select id="tipoDocumento" name="tipoDocumento">
+                                  <option value="">Seleccione tipo de documento</option>
+                                  <option value="Cedula">Cédula de ciudadanía</option>
+                                  <option value="CedulaExt">Cédula de extranjería</option>
+                                </select>
+                                <label>Tipo Documento</label>
+                                <span  class="color_rojo" id="valTipoDocumento"></span> 
+                              </div>
+                            
+                            <div class="input-fiel col s12">
+                                <label for="documento">Documento</label>
+                                <input type="text" placeholder="Documento" id="documento" name="documento" title="Ingrese su documento." class="solo_numeros">
+                                <label for="" id="vDocumento" class="color_rojo"></label>
+                            </div>
+                            <div class="input-fiel col s12">
+                                <label for="nombre">Telefono</label>
+                                <input type="text" placeholder="Teléfono" id="telefono" name="telefono" title="Ingrese su número de teléfono." class="solo_numeros">
+                                <label for="" class="color_rojo" id="vTelefono"></label>
+
+                            </div>
+                           
+                            <div class="input-fiel col s12">
+                                <label for="nombre">Dirección</label>
+                                <input type="text" placeholder="Dirección" id="direccion" name="direccion" title="Ingrese su dirección.">
+                                <label for=""  class="color_rojo" id="vDireccion"></label>
+
+                            </div>
+                            <div class="input-fiel col s12">
+                                <label for="nombre">Correo</label>
+                                <input type="text" placeholder="Correo" name="correo" id="correo" title="Ingrese su correo electrónico.">
+                                <label for=""  class="color_rojo" id="vCorreo"></label>
+
+                            </div>
+                            <div class="input-fiel col s12">
+                                <label for="nombre">Cargo</label>
+                                <input type="text" placeholder="Cargo" name="cargo" id="cargo" title="Ingrese su cargo." class="solo_mayus_letras">
+                                <label for=""  class="color_rojo" id="vCargo"></label>
+
+                            </div>
+                            <div class="input-fiel col s12">
+                                <label for="nombre">Nombre De Obra</label>
+                                <input type="text" placeholder="Nombre De La Obra" name="nombreObra" id="nombreObra" title="Ingrese nombre de la obra." class="solo_mayus_letras">
+                                <label for=""  class="color_rojo" id="vNOmbreObra"></label>
+
+                            </div>
+
+                            <div class="input-fiel col s12">
+                                <label for="">Fecha Registro</label>
+                                <input type="text" class="datepicker" id="fecha" name="fecha">
+                                <label for="datepicker"  class="color_rojo" id="valFecha"></label>
+                            </div>
+                         
+                            <div class="input-fiel col s12">
+                                <p>
+                                    <label>
+                                      <input type="radio" name="estado[]" value="activo" id="estadoActivo" />
+                                      <span>Activo</span>
+                                    </label>
+                                  </p>
+                            
+                                <p>
+                                    <label >
+                                      <input type="radio" name="estado[]" value="inactivo"id="estadoInactivo"/>
+                                      <span>Inactivo</span>
+                                      <label for="estadoInactivo" id="valEstado"></label>
+                                    </label>
+                                    </p>
+                                     <label for="" id="valEstado"  class="color_rojo"></label>
+                                    </div>
+                       
+                            <div class="input-fiel col s12" align="center">
+                                <button  class="btn btn-secondary" type="submit" name="registrar" id="registrar">Registrar</button>
+                                
+                            </div>
+                           </form>
+                        </div>
+                           <br>
+                           <br>
+                           <div class="input-fiel col s12" align="center">
+                           <button class="btn btn-secondary" name="btnVolver" id="btnVolver" onclick="location.href='index.html'"> Volver</button>
+                        </div>
+                           <div class="col s12 l12">
+                                <h5 id="mensajeRegistro"></h5>
+                            </div>
+
+                           <div class="input-fiel col s12">
+                            <footer class="footer">
+                                Presentado por: Olmeiro Orozco Ortiz &copy;
+                            </footer>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+</body>
+<script src="js/funcionesC.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</html>

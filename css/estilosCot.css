@@ -1,0 +1,52 @@
+.container {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    background: whitesmoke;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 8px;
+
+}
+
+.titulo{
+    background: #B52407;
+    color:white;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.card{
+    height: auto;
+    margin: auto;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.botones{
+    height: auto;
+    margin: auto;
+}
+footer { 
+    text-align: center;
+    align-items: center;
+    align-self: flex-end;
+    line-height: 2;
+    text-align: center;
+    width: 100%;
+}
+.footer{
+    margin-top: auto ;
+    border-radius: 20px;
+    font-family: "Monaco";
+    background-color:#e3e4e5;
+  
+}

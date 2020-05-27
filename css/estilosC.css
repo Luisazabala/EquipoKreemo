@@ -1,0 +1,28 @@
+nav ul li a{
+    text-decoration: none;
+  
+}
+
+h3 {
+    padding-bottom: 8px;
+    background-color: #852407;
+    text-align: center;
+    border-radius: 5px;
+    color:aliceblue;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+.botones {
+    text-align: right;
+}
+
+.footer {
+    text-align: center;
+}
+
+#valNombre, #valApellido, #valTipoDocumento,#valTipoDocumento, #vDocumento,
+#vTelefono, #vDireccion, #vCorreo, #vCargo, #vNOmbreObra, #valFecha, #valEstado  {
+    color: red;
+}

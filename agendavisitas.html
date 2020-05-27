@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.10.12/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="css/estilosV.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-body" align="center">
+            <div class="input-fiel col s12">
+                <header style="color:#DB442A"> <h1>Agenda de Visitas</h1></header>
+            </div>
+    <form id="frmPersona" name="frmPersona" action="registrar_cita.php" method="POST">
+        
+        <br>
+        <b>Tipo Documento: </b><select name="TipoDocumento" id="TipoDocumento">
+            <option value="">Seleccione</option>
+            <option value="CC">Cédula de Ciudadanía</option>
+            <option value="CE">Cédula de Extranjería</option>
+            <label id="cc" class="color_rojo"></label>
+        </select>
+        <label id="validacion_tipodocumento" class="color_rojo"></label>
+        <br>
+        <b>Documento: </b><input type="text" id="Documento" name="Documento" class="solo_numeros">
+        <label id="validacion_documento" class="color_rojo"></label>
+        <br>
+        <label><b>Tipo de Visita</b></label> <select name="TipoVisita" id="TipoVisita">
+            <option value="">Seleccione</option>
+            <option value="C">Comercial</option>
+            <option value="V">Viablidad</option>
+            </select>
+        <label id="validacion_tvisita" class="color_rojo"></label>
+        <br>
+        <b>Nombre: </b><input type="text" id="Nombres" name="Nombres" class="solo_letras">
+        <label id="validacion_nombre" class="color_rojo"></label>
+        <br>
+        
+            <b>Apellidos </b></label><input type="Text" class="solo_letras" title="Ingrese un Apellido" size="14" name="apellido" id="apellido"> 
+        <label id="validacion_apellido" class="color_rojo"></label>           
+         <br>  
+         <label><b>Dirección</b></label><input type="Text" size="20" name="direccion" id="direccion"  placeholder="Dirección de obra" title="Ingrese una dirección" >
+         <label id="validacion_direccion" class="color_rojo"></label>
+         <br>
+         <label><b>Ciudad</b></label> <select id="ciudad" name="ciudad" title="Seleccione una ciudad">
+                     <option value="">Elige una opción</option>
+                     <option value="Rionegro">Medellín</option>
+                     <option value="Panama">Bello</option>
+                     <option value="Pereira">Envigaod</option>
+                   </select>
+                   <label id="validacion_ciudad" class="color_rojo"></label>
+         <br>
+          <label><b>Fecha Visita</b></label>
+          <input type="date" title="Seleccione una fecha" id="fechaV" name="fechaV" data-date-format="d/M/y" size="8"> 
+          <label id="validacion_fvisita" class="color_rojo"></label>
+          <br>
+         <label><b>Correo Electrónico</b></label>
+         <input type="email" name="correo" title="Ingrese un correo electrónico"  id="correo">
+         <label id="validacion_correo"class="color_rojo"></label> 
+        <br>
+        <button class="btn btn-primary" type="submit" id="BtnRegistrar" name="BtnRegistrar">Registrar</button>
+        
+        </div>
+    </div>
+    <div class="botones col-sm-4 titulo" style="text-align: center; background-color:#FF9785;">
+      <p align="center" id="RespuestaTransaccion"></p> 
+ </div>
+    </form>
+    <div align="center">
+    <button class="btn btn-secondary" type="button" id="BtnLimpiar" name="BtnLimpiar">Limpiar</button>
+    <button  class="btn btn-secondary" name="btnVolver" id="btnVolver" onclick="location.href='index.html'"> Volver</button>
+  </div>
+    <footer>
+        <div class="footer" style="margin-top: 2rem;">
+        <i><b>LUISA FERNANDA ZABALA ORTIZ</b></i>
+        </div>
+   </footer>
+</body>
+ <script src="js/funcionesV.js"></script>
+</html>
